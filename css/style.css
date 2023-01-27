@@ -1,0 +1,144 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+footer{
+    background-color: rgb(24,24,24);
+    color: hsla(0,0%,100%,0.3);
+    width: 100%;
+    padding: 120px 0 40px;
+    position: absolute; 
+    bottom: 0;
+}
+.wrapper{
+    max-width: 90%;
+    height: 100%;
+    margin: auto;
+    padding: 10px 0 2px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    
+}
+
+.wrapper-icons{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 70px;
+    flex-wrap: wrap;
+}
+
+.icon{
+    padding: auto;
+}
+
+i{
+    font-size: 50px;
+}
+
+.wrapper-links{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.links-work{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 20vw;
+}
+
+.links-careers{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    min-width: 18vw;
+}
+
+a{
+    text-decoration: none;
+    color: hsla(0,0%,100%,0.3);
+    margin-right: 7px;
+}
+
+.links-work a:last-of-type{
+    margin-right: 0;
+}
+
+.links-careers a:last-of-type{
+    margin-right: 0;
+}
+
+.wrapper-icons a:hover > i[class*="twitter"]{
+    color: red;
+}
+
+.wrapper-icons a:hover > i[class*="facebook"]{
+    color: blue;
+}
+
+.wrapper-icons a:hover > i[class*="instagram"]{
+    color: white;
+}
+
+.wrapper-icons a:hover > i[class*="dribbble"]{
+    color: green;
+}
+
+.wrapper-icons a:hover > i[class*="behance"]{
+    color: fuchsia;
+}
+
+.link-flat:hover{
+    color: darkviolet;
+    padding-right: 30px;
+}
+
+@media  screen and (max-width: 650px) {
+    .wrapper-links{
+        flex-direction: column;
+        gap: 7px;
+    }
+
+    .wrapper-links span{
+        order: -1;
+        margin-bottom: 15px;
+    }
+
+    .links-work, .links-careers{
+        flex-direction: column;
+        gap: 7px;
+        align-items: center;
+    }
+}
+
+@media  screen and (max-width: 530px) {
+    .wrapper-icons i{
+        font-size: x-large;
+    }
+
+    .wrapper-icons{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        margin-bottom: 25px;
+    }
+
+    .wrapper-links{
+        font-size: small;
+    }
+
+    footer{
+        padding: 30px 0 10px;
+    }
+}
